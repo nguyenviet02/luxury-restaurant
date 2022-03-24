@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0 30rem;
+}
+
+.container-fluid {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
