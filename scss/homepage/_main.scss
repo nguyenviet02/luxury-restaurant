@@ -1,0 +1,133 @@
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+
+  &__image {
+    width: 100%;
+    height: 55rem;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .main__title {
+      position: absolute;
+      z-index: 1;
+      color: $main-color;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 30rem;
+
+      p {
+        font-size: 4.5rem;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+      }
+
+      span {
+        color: $orange;
+      }
+    }
+  }
+
+  &__info {
+    width: 100%;
+    height: 7.5rem;
+    position: relative;
+
+    .container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    &__flag {
+      position: absolute;
+      bottom: 30%;
+      left: 30rem;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .flag {
+        width: 14rem;
+        height: 16rem;
+        border: 1px dotted $main-color;
+        background-color: $flag-color;
+        clip-path: polygon(0% 0%, 0 100%, 50% 70%, 100% 100%, 100% 0);
+
+        padding-top: 4rem;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+
+        color: $main-color;
+        font-size: 2rem;
+      }
+      .fas {
+        width: 5.5rem;
+        height: 5.5rem;
+        padding: 1rem;
+        border-radius: 50%;
+        border: 2px solid $main-color;
+        transform: translateY(50%);
+        z-index: 100;
+
+        background-color: $secondary-color;
+        color: $main-color;
+
+        font-size: 2.5rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3.5rem;
+
+      &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .fas {
+          font-size: 25px;
+        }
+
+        .fa-chevron-circle-right {
+          color: $orange;
+        }
+
+        &__content {
+          margin: 0 1rem;
+          .title {
+            font-size: 14px;
+          }
+          .text {
+            font-size: 15px;
+            font-weight: 600;
+            color: $orange;
+          }
+          .phone {
+            font-size: 25px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+.today {
+  width: 100%;
+  height: 77rem;
+  padding: 7rem 0;
+  position: relative;
+
+  background: url("../images/today1.webp");
+  background-size: 100% 41rem;
+  background-repeat: no-repeat;
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  &__card-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 3rem;
+    margin-top: 2.5rem;
+
+    &__card {
+      width: 45rem;
+      height: 55rem;
+      background-color: #fff;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.3);
+
+      .card__image {
+        width: 100%;
+        height: 60%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .card__body {
+        padding: 4rem 3rem 5rem 3rem;
+        border-bottom: 2px solid $light-gray;
+        text-align: center;
+
+        &__title {
+          font-size: 2.5rem;
+          font-weight: 600;
+          margin-bottom: 1rem;
+        }
+        &__desc {
+          font-family: "Passenger Display", sans-serif;
+          font-size: 1.4rem;
+          font-weight: 400;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          word-break: break-word;
+        }
+      }
+
+      .card__footer {
+        width: 100%;
+        padding: 1rem 3rem 3rem 3rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .card__left {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 2rem;
+
+          &__type {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0 1rem;
+            border-right: 2px solid $light-gray;
+            font-size: 1.3rem;
+
+            .first {
+              font-weight: 700;
+            }
+            .second {
+              font-size: 1.2rem;
+              font-weight: 600;
+              color: $dark-gray;
+            }
+          }
+          &__phone {
+            font-size: 2rem;
+            font-weight: 600;
+          }
+        }
+
+        .card__right {
+          &__price {
+            font-size: 3rem;
+            font-weight: 600;
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom__image {
+    position: absolute;
+    z-index: -1;
+    bottom: -5rem;
+    right: 15rem;
+
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+  }
+}

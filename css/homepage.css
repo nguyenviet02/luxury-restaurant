@@ -36,6 +36,7 @@ body {
 .header {
   width: 100%;
   height: 7rem;
+  background-color: #fff;
 }
 .header .container {
   display: flex;
@@ -204,6 +205,7 @@ body {
   width: 100%;
   height: 41rem;
   padding: 9rem 0px 8rem 0px;
+  background-color: #fff;
 }
 .about .container {
   display: flex;
@@ -387,6 +389,7 @@ body {
   width: 100%;
   height: 65rem;
   position: relative;
+  background-color: #fff;
 }
 .menu .container-fluid {
   display: flex;
