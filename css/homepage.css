@@ -508,10 +508,9 @@ body {
 .feedback {
   width: 100%;
   height: 36rem;
-  background: url("../../images/feedback1.png") no-repeat;
+  background: url("../../images/feedback1.jpg") no-repeat;
   background-size: cover;
   padding: 7.5rem 0;
-  color: #fff;
 }
 .feedback .container {
   display: flex;
