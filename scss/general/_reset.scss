@@ -28,6 +28,13 @@ a {
   text-decoration: none;
 }
 
+hr {
+  width: 75%;
+  height: 2px;
+  border: 1px solid $light-gray;
+  margin: 0 auto;
+}
+
 body {
   min-height: 100vh;
   font-family: "Passenger Display";
