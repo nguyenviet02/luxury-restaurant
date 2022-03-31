@@ -1,8 +1,16 @@
 .header-image {
   width: 100%;
   height: 19rem;
-  background: url("../../images/menu/menu3.webp") no-repeat center center;
-  background-size: cover;
+  position: relative;
+}
+.header-image .bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 .header-image .container {
   height: 100%;
