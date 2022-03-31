@@ -5,12 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu</title>
+  <title>Reservation</title>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="../css/general.css">
-  <link rel="stylesheet" href="../css/menu.css">
-  <script src="../js/menu.js" defer></script>
+  <link rel="stylesheet" href="../css/reservation.css">
 </head>
 
 <body>
@@ -24,11 +23,11 @@
         <li class="header__nav__item nav-link">
           <a href="../index.html">Home</a>
         </li>
-        <li class="header__nav__item nav-link checked">
-          <a href="./sub-page/menu.html">Menu</a>
-        </li>
         <li class="header__nav__item nav-link">
-          <a href="./reservation.html">Reservation</a>
+          <a href="./menu.html">Menu</a>
+        </li>
+        <li class="header__nav__item nav-link checked">
+          Reservation
         </li>
         <li class="header__nav__item nav-link">
           Recipe
@@ -59,76 +58,105 @@
   <!-- Header Image -->
   <section class="header-image">
     <div class="container">
-      <img src="../images/menu/menulogo.png" alt="">
+      <img src="../images/reserve/reservation-logo.png" alt="">
     </div>
   </section>
 
-  <!-- Menu List -->
-  <section class="menu-list">
-    <h1 class="menu-list__title">Menu List</h1>
+  <!-- Book Form -->
+  <section class="book-form">
     <div class="container">
-      <ul class="menu-list__main"> </ul>
-
-    </div>
-  </section>
-  <hr>
-
-  <!-- Menu Grid View -->
-  <section class="menu-grid">
-    <div class="container">
-      <h1 class="menu-grid__title">Menu Grid View</h1>
-      <ul class="menu-grid__main"> </ul>
-    </div>
-  </section>
-  <hr>
-
-  <!-- Menu Tile View -->
-  <section class="menu-tile">
-    <div class="container">
-      <h1 class="menu-tile__title">Menu Tile View</h1>
-      <ul class="menu-tile__main"> </ul>
-    </div>
-  </section>
-
-  <!-- Service -->
-  <section class="service">
-    <div class="container-fluid">
-      <div class="service__image">
-        <img src="../images/menu/service1.webp" alt="">
+      <div class="book-form__title">
+        <h1>Book a Table</h1>
       </div>
-      <div class="service__speciality">
-        <div class="service__speciality__title">
-          <h1>Speciality</h1>
+      <div class="book-form__desc">
+        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, iusto. Eligendi id dicta error est,
+          eius nihil quaerat, recusandae iure impedit quae, iste dolores eos. Minima rem quasi ullam nisi deleniti, a
+          inventore doloremque!</span>
+      </div>
+      <form action="#" class="book-form__main">
+        <div class="book-form__main__input">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Name">
         </div>
-        <ul class="service__speciality__list">
-          <li class="service__speciality__list__item">
-            <div class="service__speciality__list__item__title">
-              Excellent Service
+        <div class="book-form__main__input">
+          <i class="fas fa-envelope"></i>
+          <input type="text" placeholder="Email">
+        </div>
+        <div class="book-form__main__input">
+          <i class="fas fa-mobile-alt"></i>
+          <input type="text" placeholder="Phone">
+        </div>
+        <div class="book-form__main__input">
+          <i class="fas fa-calendar-alt"></i>
+          <input type="text" placeholder="Date">
+        </div>
+        <div class="book-form__main__input">
+          <i class="fas fa-clock"></i>
+          <input type="text" placeholder="Time">
+        </div>
+        <div class="book-form__main__input">
+          <i class="fas fa-users"></i>
+          <input type="text" placeholder="Guest">
+        </div>
+        <div class="book-form__main__text-area">
+          <div class="book-form__main__text-area__title">
+            <i class="fas fa-comments"></i>
+            <span>Special Requirement</span>
+          </div>
+          <textarea name="" id="" cols="120" rows="10" resize="false"></textarea>
+        </div>
+        <button class="book-form__main__btn">
+          Make Reservation
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Special Reservations -->
+  <section class="special-res">
+    <div class="container">
+      <div class="special-res__title">
+        <h1>Special Reservations</h1>
+      </div>
+      <div class="special-res__main">
+        <div class="special-res__main__item item1">
+          <div class="special-res__main__item__image">
+            <img src="../images/reserve/reserve4.jpeg" alt="">
+          </div>
+          <div class="special-res__main__item__body">
+            <div class="special-res__main__item__body__title">
+              <span>Private Dinning</span>
             </div>
-            <div class="service__speciality__list__item__desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
+            <div class="special-res__main__item__body__desc">
+              <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</span>
             </div>
-          </li>
-          <li class="service__speciality__list__item">
-            <div class="service__speciality__list__item__title">
-              Excellent Service
+          </div>
+        </div>
+        <div class="special-res__main__item2">
+          <div class="special-res__main__item2__phone">
+            <i class="fas fa-phone"></i>
+            <span class="main-text">+1-123-456-7890</span>
+            <span class="sub-text">CALL US FOR SPECIAL RESERVATION</span>
+          </div>
+          <div class="special-res__main__item2__mail">
+            <i class="fas fa-envelope"></i>
+            <span class="main-text">INFO@LUXURY.COM</span>
+            <span classs="sub-text">MAIL US FOR SPECIAL RESERVATION</span>
+          </div>
+        </div>
+        <div class="special-res__main__item item1">
+          <div class="special-res__main__item__image">
+            <img src="../images/reserve/reserve3.webp" alt="">
+          </div>
+          <div class="special-res__main__item__body">
+            <div class="special-res__main__item__body__title">
+              <span>Couple Dinning</span>
             </div>
-            <div class="service__speciality__list__item__desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
+            <div class="special-res__main__item__body__desc">
+              <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</span>
             </div>
-          </li>
-          <li class="service__speciality__list__item">
-            <div class="service__speciality__list__item__title">
-              Excellent Service
-            </div>
-            <div class="service__speciality__list__item__desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>

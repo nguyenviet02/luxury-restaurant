@@ -26,6 +26,7 @@ ul,
 a {
   list-style: none;
   text-decoration: none;
+  color: inherit;
 }
 
 hr {
@@ -92,6 +93,16 @@ body {
   color: #000;
   font-size: 1.3rem;
   margin-right: 0.5rem;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.checked {
+  text-decoration: underline;
+  color: #fea100;
+  font-size: 1.5rem;
 }
 
 .footer {

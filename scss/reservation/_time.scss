@@ -1,0 +1,49 @@
+.open-time {
+  &__time {
+    position: relative;
+    width: 100%;
+    padding: 7rem 0;
+    display: flex;
+    align-items: center;
+
+    &__title {
+      font-size: 1.8rem;
+      margin-right: 11rem;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__item {
+        margin: 0 1rem;
+
+        &__title {
+          font-size: 1.8rem;
+          margin-bottom: 1rem;
+        }
+
+        &__time {
+          font-size: 2rem;
+          font-weight: 700;
+          color: $orange;
+        }
+      }
+    }
+  }
+  &__sub-image {
+    position: absolute;
+    bottom: 6rem;
+    right: 0;
+    width: 16rem;
+    height: 16rem;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

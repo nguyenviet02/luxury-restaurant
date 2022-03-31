@@ -1,7 +1,7 @@
 .header-image {
   width: 100%;
   height: 19rem;
-  background: url("../../images/menu3.webp") no-repeat center center;
+  background: url("../../images/menu/menu3.webp") no-repeat center center;
   background-size: cover;
 }
 .header-image .container {
@@ -258,13 +258,12 @@
 
 .service {
   width: 100%;
-  height: 63rem;
+  height: 44rem;
 }
 .service .container-fluid {
-  width: 100%;
-  height: 70%;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   gap: 0 5.5rem;
 }
 .service__image {
@@ -304,35 +303,36 @@
   line-height: 1.5;
   color: #7D8587;
 }
-.service__time {
+
+.open-time__time {
   position: relative;
   width: 100%;
   padding: 7rem 0;
   display: flex;
   align-items: center;
 }
-.service__time__title {
+.open-time__time__title {
   font-size: 1.8rem;
   margin-right: 11rem;
 }
-.service__time__list {
+.open-time__time__list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.service__time__list__item {
+.open-time__time__list__item {
   margin: 0 1rem;
 }
-.service__time__list__item__title {
+.open-time__time__list__item__title {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
-.service__time__list__item__time {
+.open-time__time__list__item__time {
   font-size: 2rem;
   font-weight: 700;
   color: #fea100;
 }
-.service__sub-image {
+.open-time__sub-image {
   position: absolute;
   bottom: 6rem;
   right: 0;
@@ -340,7 +340,7 @@
   height: 16rem;
   overflow: hidden;
 }
-.service__sub-image img {
+.open-time__sub-image img {
   height: 100%;
   width: 100%;
   object-fit: cover;
